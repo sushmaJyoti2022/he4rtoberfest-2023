@@ -1,0 +1,38 @@
+#include <iostream>
+
+int main() {
+    // Display a simple welcome message
+    std::cout << "Welcome to My Landing Page" << std::endl;
+
+    // Provide some information
+    std::cout << "This is a simple landing page created with C++." << std::endl;
+    std::cout << "Please take the desired action below:" << std::endl;
+
+    // Display a call-to-action
+    std::cout << "1. Sign Up" << std::endl;
+    std::cout << "2. Learn More" << std::endl;
+    std::cout << "3. Exit" << std::endl;
+
+    // Get user input
+    int choice;
+    std::cout << "Enter your choice (1/2/3): ";
+    std::cin >> choice;
+
+    // Process user's choice
+    switch (choice) {
+        case 1:
+            std::cout << "You chose to Sign Up. Thank you!" << std::endl;
+            break;
+        case 2:
+            std::cout << "You chose to Learn More. Here's more information." << std::endl;
+            break;
+        case 3:
+            std::cout << "You chose to Exit. Goodbye!" << std::endl;
+            break;
+        default:
+            std::cout << "Invalid choice. Please select 1, 2, or 3." << std::endl;
+            break;
+    }
+
+    return 0;
+}
